@@ -7,11 +7,15 @@
     "promise": "",
     "log4js": "",
     "phantomjs": "^1.9.19",
-    "selenium-webdriver": "^2.48.2"
+    "selenium-webdriver": "^2.48.2",
+    "snyk": "^1.190.0"
   },
   "devDependencies": {},
   "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Alexey K",
-  "license": ""
+  "license": "",
+  "snyk": true
 }
