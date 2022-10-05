@@ -6,12 +6,16 @@
   "dependencies": {
     "promise": "",
     "log4js": "",
-    "phantomjs": "^1.9.19",
-    "selenium-webdriver": "^2.48.2"
+    "phantomjs": "^2.1.1",
+    "selenium-webdriver": "^3.5.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {},
   "scripts": {
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "Alexey K",
-  "license": ""
+  "license": "",
+  "snyk": true
 }
